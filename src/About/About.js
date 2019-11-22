@@ -1,9 +1,9 @@
 import React from "react";
-
+import AboutBody from "./AboutBody";
 export default props => {
   return (
     <div>
-      <h1>Geoffrey Hutson</h1>
+      <AboutBody />
     </div>
   );
 };

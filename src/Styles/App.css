@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* The header styles */
+#wrapper {
+  height: 100vh;
+
+  border: 1px solid black;
+}
+#nav-wrapper {
+  display: flex;
+  background-color: aquamarine;
+  height: 100vh;
+}
+#myName {
+  padding: 15px;
+  width: 160px;
+}
+.navBar {
+  margin-left: 9vw;
+}
+.navBarList {
+  display: flex;
+  width: 75vw;
+  justify-content: flex-end;
+  margin-left: 15px;
+}
+
+.navBarItems {
+  list-style: none;
+  padding: 1vw;
+}
+.navBarItems a {
+  color: black;
+}
+/* this is the end of header styles */
