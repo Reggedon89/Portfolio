@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import AboutBody from "../About/AboutBody";
+
 export default props => {
   return (
     <div id="wrappper">
@@ -14,7 +15,7 @@ export default props => {
           </div>
         </div>
       </div>
-      <AboutBody />
+      <AboutBody id="about" />
     </div>
   );
 };

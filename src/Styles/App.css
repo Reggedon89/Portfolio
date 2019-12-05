@@ -30,10 +30,12 @@ html {
 }
 #nav-wrapper {
   display: flex;
+  position: fixed;
   z-index: 1;
   /* height: 100vh; */
 }
 #myName {
+  color: white;
   padding: 15px;
   width: 177px;
   height: 0;
@@ -43,7 +45,7 @@ html {
 }
 .navBarList {
   display: flex;
-  width: 75vw;
+  width: 76vw;
   justify-content: flex-end;
   margin-left: 15px;
 }
@@ -51,11 +53,15 @@ html {
   list-style: none;
   padding: 1vw;
 }
-.navBarItems a {
-  color: black;
-}
-.navBarItems a:hover {
+.navItem {
   color: white;
+}
+.navItem:hover {
+  cursor: pointer;
+  color: rgba(86, 106, 51, 0.7);
+  opacity: 1;
+  text-decoration: none;
+  transition: 100ms;
 }
 #labelName {
   color: white;
@@ -75,7 +81,7 @@ html {
 #about-wrapper {
   display: flex;
   background-color: rgb(71, 71, 71);
-  height: 70vh;
+  height: 100vh;
   color: white;
   text-align: center;
 }
@@ -83,6 +89,6 @@ html {
 .aboutDiv {
   margin-top: 10vh;
   width: 100vw;
-  line-height: 0.5;
+  line-height: 1;
 }
 /* this is the end of the about styles */
