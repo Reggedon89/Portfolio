@@ -74,7 +74,15 @@ html {
 /* This is the about styles */
 #about-wrapper {
   display: flex;
-  background-color: red;
-  height: 100vh;
+  background-color: rgb(71, 71, 71);
+  height: 70vh;
+  color: white;
+  text-align: center;
+}
+
+.aboutDiv {
+  margin-top: 10vh;
+  width: 100vw;
+  line-height: 0.5;
 }
 /* this is the end of the about styles */

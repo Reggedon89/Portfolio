@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 export default props => {
   return (
     <div id="wrappper">
       <div id="about-wrapper">
         <div className="aboutDiv">
-          <ul className="aboutList">
+          <div className="aboutList">
+            <h1>Hey, I'm Geoff</h1>
             <p>
               I am a Full Stack Developer from Las Vegas. I recieved my training
               from PunchCode, out of Las Vegas.
@@ -27,7 +28,7 @@ export default props => {
               Whenever I pull myself away for the computer, you could find me
               listening to music or catching up on my many shows.
             </p>
-          </ul>
+          </div>
         </div>
       </div>
     </div>
