@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
 export default props => {
@@ -15,9 +14,9 @@ export default props => {
   function scrollToAbout() {
     about.scrollIntoView({ behavior: "smooth", block: "end" });
   }
+
   useScrollPosition(
     ({ prevPos, currPos }) => {
-      console.log(currPos);
       if (currPos.y !== 0) {
         const isVisible = currPos.y > prevPos.y;
 
@@ -46,8 +45,22 @@ export default props => {
     <div id="nav-wrapper" style={{ ...headerStyle }}>
       <div id="myName">
         <h6>
-          <span>&lt;</span>Geoffrey Hutson <span>&frasl;</span>{" "}
-          <span>&gt;</span>
+          {headerStyle.visibility === "visible" ? (
+            <span className="tag-color">&lt;</span>
+          ) : (
+            <span>&lt;</span>
+          )}
+          Geoffrey Hutson
+          {headerStyle.visibility === "visible" ? (
+            <span className="tag-color">&frasl;</span>
+          ) : (
+            <span>&frasl;</span>
+          )}
+          {headerStyle.visibility === "visible" ? (
+            <span className="tag-color">&gt;</span>
+          ) : (
+            <span>&gt;</span>
+          )}
         </h6>
       </div>
       <div className="navBar">

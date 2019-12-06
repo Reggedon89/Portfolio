@@ -13,8 +13,10 @@ html {
 #intro {
   display: flex;
   position: relative;
-  background-image: url("../Images/background.jped.jpeg");
+  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   height: 100vh;
 }
@@ -43,6 +45,9 @@ html {
 .navBar {
   margin-left: 9vw;
 }
+.tag-color {
+  color: lightgreen;
+}
 .navBarList {
   display: flex;
   width: 76vw;
@@ -58,7 +63,7 @@ html {
 }
 .navItem:hover {
   cursor: pointer;
-  color: rgba(86, 106, 51, 0.7);
+  color: lightgreen;
   opacity: 1;
   text-decoration: none;
   transition: 100ms;
