@@ -4,8 +4,9 @@ export default props => {
     <div id="wrappper">
       <div id="about-wrapper">
         <div className="aboutDiv">
+          <h1 id="greeting">Hey, I'm Geoff</h1>
+          <div id="underline" />
           <div className="aboutList">
-            <h1>Hey, I'm Geoff</h1>
             <p>
               I am a Full Stack Developer from Las Vegas. I recieved my training
               from PunchCode, out of Las Vegas.

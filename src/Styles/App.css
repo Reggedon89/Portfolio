@@ -34,12 +34,13 @@ html {
   display: flex;
   position: fixed;
   z-index: 1;
+  width: 100vw;
   /* height: 100vh; */
 }
 #myName {
   color: white;
   padding: 15px;
-  width: 177px;
+  width: 100vw;
   height: 0;
 }
 .navBar {
@@ -76,19 +77,45 @@ html {
   left: 33vw;
 }
 
+#labelName i {
+  color: white;
+  font-size: 40px;
+}
+#labelName i:hover {
+  cursor: pointer;
+  color: lightgreen;
+  transition: 150ms;
+}
+
 #tagline {
   text-align: center;
   width: 30vw;
 }
+
+#social-media {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3em;
+  margin-right: 20em;
+}
+#social-media i {
+  margin-right: 0.2em;
+}
+
 /* this is the end of header styles */
 
 /* This is the about styles */
 #about-wrapper {
   display: flex;
+  font-family: "Courier New", Courier, monospace;
   background-color: rgb(71, 71, 71);
-  height: 100vh;
+  /* height: 100vh; */
   color: white;
   text-align: center;
+}
+
+#greeting {
+  font-size: 60px;
 }
 
 .aboutDiv {
@@ -96,4 +123,27 @@ html {
   width: 100vw;
   line-height: 1;
 }
+.aboutList {
+  width: 80vw;
+  margin-left: 10vw;
+  font-size: 30px;
+  padding: 1em;
+  align-items: flex-start;
+}
+#underline {
+  margin-left: 30vw;
+  border: 1px solid black;
+
+  background-image: linear-gradient(lightgreen, black);
+  box-shadow: 13px 10px 22px 0px rgba(0, 0, 0, 0.91);
+  width: 40vw;
+  height: 5px;
+  border-radius: 30px;
+}
 /* this is the end of the about styles */
+/* This is the start of Skills styles */
+#skills-wrapper {
+  height: 100vh;
+}
+
+/* This is the end of Skills styles */
